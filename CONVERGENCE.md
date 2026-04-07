@@ -132,8 +132,8 @@ No external thermal controller needed — the confidence model IS the thermal go
 |---|---|---|
 | 1 | ✅ Schedule | Event sequencing (spec: Events) |
 | 2 | ✅ Journal | Crash recovery, causal history |
-| 3 | **Encrypt** | Noise Protocol transport layer (spec: channel confidence floor) |
-| 4 | Sync | Reconnection = confidence restoration |
+| 3 | ✅ Encrypt | Noise Protocol transport layer (spec: channel confidence floor) |
+| 4 | ✅ Sync | Reconnection = confidence restoration |
 | 5 | Export | Data portability |
 | 6 | Migrate+ | Schema evolution |
 | 7 | **Confidence** | Tagged values + propagation algebra |
@@ -153,7 +153,7 @@ No external thermal controller needed — the confidence model IS the thermal go
 
 ## Current State
 
-- **Kernel:** 19/19 modules green. 2/6 sovereignty modules done.
-- **Spec:** Architecture + Glossary complete. Open questions identified.
-- **Gap:** Confidence model, BSP interface, channel lifecycle, delegation/attenuation.
-- **Next:** Encrypt module (kernel up) + confidence type definition (spec down).
+- **Kernel:** 21/21 modules green. 4/6 sovereignty modules done.
+- **Spec:** Architecture + Glossary complete. Confidence type + BSP interface drafted.
+- **Gap:** Confidence model (algebra), channel lifecycle, delegation/attenuation.
+- **Next:** Export module (kernel up) + confidence algebra formalization (spec down).
